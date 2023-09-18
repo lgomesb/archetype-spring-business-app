@@ -1,0 +1,9 @@
+server: 
+  servlet:
+    context-path: /${artifactId}
+spring:
+  application:
+    name: ms-${artifactId}
+  profiles:
+    active:
+    - dev
