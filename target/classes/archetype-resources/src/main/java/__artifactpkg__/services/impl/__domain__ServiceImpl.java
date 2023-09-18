@@ -20,30 +20,30 @@ public class ${domain}ServiceImpl implements ${domain}Service {
 
     @Override
     public ${domain}Record create(${domain}Record recordObject) {
-        ${domain} ${domain} = repository.save(new ${domain}(recordObject.name()) );
-        return new ${domain}Record(${domain}.getId(), ${domain}.getName());
+        ${domain} ${artifactpkg} = repository.save(new ${domain}(recordObject.name()) );
+        return new ${domain}Record(${artifactpkg}.getId(), ${artifactpkg}.getName());
     }
 
     @Override
     public ${domain}Record findById(UUID id) {
-        ${domain} ${domain} = this.get${domain}ById(id);
-        return new ${domain}Record(${domain}.getId(), ${domain}.getName());
+        ${domain} ${artifactpkg} = this.get${domain}ById(id);
+        return new ${domain}Record(${artifactpkg}.getId(), ${artifactpkg}.getName());
     }
 
     
     @Override
     public void update(${domain}Record recordObject) {
-        ${domain} ${domain} = this.get${domain}ById(recordObject.id());
-        ${domain}.setName(recordObject.name());
-        ${domain}.setModifieldOn(LocalDateTime.now());
-        ${domain}.setModifiedBy("99999");
-        repository.save(${domain});      
+        ${domain} ${artifactpkg} = this.get${domain}ById(recordObject.id());
+        ${artifactpkg}.setName(recordObject.name());
+        ${artifactpkg}.setModifieldOn(LocalDateTime.now());
+        ${artifactpkg}.setModifiedBy("99999");
+        repository.save(${artifactpkg});
     }
     
     @Override
     public void delete(UUID id) {
-        ${domain} ${domain} = this.get${domain}ById(id);
-        repository.delete(${domain});
+        ${domain} ${artifactpkg} = this.get${domain}ById(id);
+        repository.delete(${artifactpkg});
 
     }
     

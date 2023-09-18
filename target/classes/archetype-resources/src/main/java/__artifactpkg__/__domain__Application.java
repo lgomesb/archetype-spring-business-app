@@ -1,18 +1,13 @@
 package ${package}.${artifactpkg};
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ${domain}Application implements CommandLineRunner {
+public class ${domain}Application {
 
     public static void main(String[] args) {
         SpringApplication.run(${domain}Application.class, args);
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println("${domain}");
-    }
 }

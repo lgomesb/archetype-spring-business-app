@@ -7,10 +7,10 @@ import java.util.UUID;
 
 public class ${domain}ResponseDTO extends ResponseDTO {
 
-    public static ${domain}ResponseDTO create(${domain}Record ${domain}Record) {
+    public static ${domain}ResponseDTO create(${domain}Record ${artifactpkg}Record) {
        return ${domain}ResponseDTO.builder()
-                .id(${domain}Record.id())
-                .name(${domain}Record.name())
+                .id(${artifactpkg}Record.id())
+                .name(${artifactpkg}Record.name())
                 .build();
     }
 

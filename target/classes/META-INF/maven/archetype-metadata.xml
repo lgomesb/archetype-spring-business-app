@@ -33,8 +33,14 @@
                 <include>**/*.*</include>
             </includes>
         </fileSet>
-        <fileSet>
+        <fileSet filtered="true" packaged="true" >
             <directory>src/test/java</directory>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>src/test/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
         </fileSet>
     </fileSets>
 </archetype-descriptor>
